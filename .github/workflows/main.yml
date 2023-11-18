@@ -49,8 +49,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
           haxelib run hmm install
-      - name: 3D Rendering
-        run: |
           haxelib install openfl
           haxelib run openfl setup
           openfl
@@ -125,8 +123,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
           haxelib run hmm install
-      - name: 3D Rendering
-        run: |
           haxelib install openfl
           haxelib run openfl setup
           openfl
@@ -202,8 +198,6 @@ jobs:
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
           haxelib run hmm install
-      - name: 3D Rendering
-        run: |
           haxelib install openfl
           haxelib run openfl setup
           openfl
