@@ -28,7 +28,7 @@ jobs:
       - name: Installing/Updating libraries
         run: |
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null --quiet
+          haxelib install hxcpp
           haxelib install hmm --quiet
           haxelib run hmm install
           haxelib install openfl
