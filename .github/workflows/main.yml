@@ -30,6 +30,14 @@ jobs:
           haxe -cp commandline -D analyzer-optimize --run Main setup
       - name: Building the game
         run: |
+          haxelib setup ~/haxelib
+          haxelib install hxcpp > /dev/null --quiet
+          haxelib install hmm --quiet
+          haxelib run hmm install
+          haxelib install openfl
+          haxelib run openfl setup
+          openfl
+          openfl install away3d
           haxelib run lime build windows
       - name: Uploading artifact (entire build)
         uses: actions/upload-artifact@v2
